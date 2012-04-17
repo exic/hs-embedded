@@ -33,18 +33,22 @@ NS_ :
 
 BS_:
 
-BU_:
+BU_: NeuerKnoten_1
 
 
 BO_ 66 Botschaft42: 2 Vector__XXX
  SG_ NeuesSignal_4 : 8|8@1- (1,0) [0|0] "" Vector__XXX
  SG_ NeuesSignal_3 : 0|8@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 291 Botschaft123: 2 Vector__XXX
- SG_ NeuesSignal_2 : 8|8@1- (1,0) [0|0] "" Vector__XXX
- SG_ NeuesSignal_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+BO_ 291 Botschaft123: 2 NeuerKnoten_1
+ SG_ NeuesSignal_2 : 8|8@1- (1,0) [0|0] ""  NeuerKnoten_1
+ SG_ NeuesSignal_1 : 0|8@1- (1,0) [0|0] ""  NeuerKnoten_1
 
 
+
+EV_ evPanel: 0 [0|0] "" 0 1 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ evCounter: 0 [0|0] "" 0 2 DUMMY_NODE_VECTOR3 Vector__XXX;
 
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "";

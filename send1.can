@@ -1,14 +1,16 @@
 /*@@var:*/
 variables
 {
+    int edgeUp = 0;
     message Botschaft123 msg123;
 }
 /*@@end*/
 
-/*@@key:'s':*/
-on key 's'
+/*@@envVar:evPanel:*/
+on envVar evPanel
 {
-    output(msg123);
+    if (getValue(this))
+        output(msg123);
 }
 /*@@end*/
 
