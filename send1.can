@@ -1,23 +1,14 @@
 /*@@var:*/
 variables
 {
-    mstimer t1;
     message Botschaft123 msg123;
 }
 /*@@end*/
 
-/*@@timer:t1:*/
-on timer t1
+/*@@key:'s':*/
+on key 's'
 {
     output(msg123);
-    setTimer(t1, 100);
-}
-/*@@end*/
-
-/*@@startStart:Start:*/
-on start
-{
-    setTimer(t1, 100);
 }
 /*@@end*/
 
