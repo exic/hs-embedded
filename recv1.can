@@ -1,33 +1,27 @@
 /*@@var:*/
 variables
 {
-    int counter;
-    message m42 42;
+    int counter = 0;
+    message Botschaft42 msg42;
 }
 /*@@end*/
 
-/*@@msg:0x123:*/
-on message 0x123
+/*@@msg:CAN1.database::Botschaft123 (0x123):*/
+on message Botschaft123
 {
-    counter++;
-    //write("hmm");
-    output(m42);
-    if (counter % 10 == 0) write("%d messages counted.", counter);
+    counter = counter + 1;
+    output(msg42);
+    if (counter % 10 == 0) {
+        write("Current count: %i", counter);
+    }
 }
 /*@@end*/
 
 /*@@key:'a':*/
 on key 'a'
 {
-    write("test");
-    output(m42);
-}
-/*@@end*/
-
-/*@@msg:0x42:*/
-on message 0x42
-{
-    write("blah!");
+    write("jau");
+    //output(Botschaft123);
 }
 /*@@end*/
 
